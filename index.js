@@ -22,6 +22,7 @@ var Helper = {
             <p class="intro"></p>
         </div>`
         var $item = $(item)
+        $item.find('a').attr('href', news.url)
         $item.find('img').attr('src',news.img_url)
         $item.find('.title').text(news.short_name)
         $item.find('.intro').text(news.name)
